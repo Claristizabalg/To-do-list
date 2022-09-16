@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#titulo {
+    margin: 1%;
+    user-select: none;
+}
+
+strong {
+    color: #BF4E6D
+}
+
+
+#proceso{
+    background-color: #4F5873;
+    border-radius: 1rem;
+    height: 500px;
+    color: white;
+    
+}
+
+#subtitulo {
+    color: white;
+    user-select: none;
+    padding: 2%;
+}
+
+.crear{
+    background-color: white;
+    border-radius: 15px;
+}
+
+#subtit {
+    color:black;
+    margin: 0%;
+    padding: 5%;
+    font-weight: bold;    
+
+}
