@@ -1,18 +1,32 @@
 import { Container, Col, Row } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
+import Tareas from './Tareas';
 
-const Tasks = () => {
+const Tasks = ({tareas, setEditarTarea, eliminarTarea}) => {
+
   return (
-    <Container className='text-center' id='proceso'>    
+    <Container className='text-center md:h-screen' id='proceso'>  
+     
       <Row id='subtitulo'>
           <h2>Mis tareas pendientes</h2>
-          <div id='subtit' className='crear d-flex flex-column text-start'>
-            <label>Título:</label>
+          <div  className='Tareas'>
+            <div className='interno'> 
+
+            {tareas.map((tarea) =>{
+              return(
+                <Tareas
+                key={tarea.id}
+                tarea={tarea}
+                setEditarTarea={setEditarTarea}
+                eliminarTarea={eliminarTarea}
+                />
+              )
+            })} 
             
-            <label>Fecha:</label>
-            <label>Descripción:</label>
+            </div>
           </div>
         </Row>
+       
     </Container>
   )
 }

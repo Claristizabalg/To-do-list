@@ -34,6 +34,7 @@ strong {
     
 }
 
+
 #subtit {
     color:black;
     margin: 0%;
@@ -41,3 +42,23 @@ strong {
     font-weight: bold;  
 
 }
+
+#contenido {
+ font-weight: 100;
+ 
+}
+
+@media (min-width: 1000px) {
+    .Tareas {
+        height: 370px;
+        overflow-y: scroll;
+    }
+    .interno {
+        margin: 5px 10px 0 10px;
+    }
+  }
+
+  .mensajeError {
+    color: red;
+
+  }
